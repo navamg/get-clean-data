@@ -34,9 +34,9 @@ principals set forth in Henry Wickham's Tidy Data paper
 
 ###to read the output
 Reading output via text editors is extremely unwieldy, it will be easier to use the 
-following R commands (assuming tidy_data.txt is in your working directory): 
-tidy<-read.table("./tidy_data.txt", header=TRUE)
-View(tidy)
+following R commands (assuming tidy_data.txt is in your working directory):
+* tidy<-read.table("./tidy_data.txt", header=TRUE)
+* View(tidy)
 
 ##Codebook
 * The X_test.txt, y_test.txt, and subject_test.txt files were read as tables and column
@@ -59,3 +59,9 @@ of the large dataset along with the Activity and Subject data
 were calculated by Subject and Activity
 * The resulting table was given descriptive column names and written to the working 
 directory as "tidy_data.txt", with row.names=FALSE
+* Variables: 
+..* Activity: The activity performed by the volunteer (WALKING, WALKING_UPSTAIRS, 
+WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+..* Subject: A number representing which volunteer performed the activity
+..* Avg.of.._______: Variable representing the mean value of the mean and std. dev. 
+variables measured in the UCI HAR Dataset provided
